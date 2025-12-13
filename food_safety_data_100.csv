@@ -1,0 +1,116 @@
+Date,Product_Category,Brand_Type,Adulterant_Detected,Detected_Value_ppm,Safe_Limit_ppm,Test_Result,Location
+2025-12-10,Eggs,Premium_Brand_A,Nitrofurans (AOZ),0.00073,0.0,Fail,Mumbai
+2025-12-09,Spices (Chilli),Export_Brand_X,Ethylene Oxide,0.08,0.1,Pass,Delhi
+2025-12-08,Eggs,Local_Farm,Nitrofurans (AOZ),0.0,0.0,Pass,Pune
+2025-12-07,Milk,Local_Dairy,Maltodextrin,0.5,0.0,Fail,Hyderabad
+2025-12-06,Honey,Supermarket_Brand,Sugar Syrup,25.0,5.0,Fail,Bangalore
+2025-12-05,Eggs,Standard_Brand_B,Antibiotics,0.00045,0.0,Fail,Chennai
+2025-12-04,Tea,Premium_Brand_C,Iron Filings,1.2,0.0,Fail,Kolkata
+2025-12-03,Ghee,Local_Market,Vegetable Oil,15.0,0.0,Fail,Jaipur
+2025-12-02,Eggs,Organic_Brand,None,0.0,0.0,Pass,Mumbai
+2025-12-01,Spices (Turmeric),Export_Brand_Y,Lead Chromate,0.002,0.0,Fail,Ahmedabad
+2025-11-30,Milk,Local_Dairy,Water,0.8,0.0,Fail,Lucknow
+2025-11-29,Honey,Local_Market,Sugar Syrup,30.0,5.0,Fail,Patna
+2025-11-28,Eggs,Standard_Brand_B,None,0.0,0.0,Pass,Chennai
+2025-11-27,Spices (Chilli),Export_Brand_X,None,0.0,0.1,Pass,Delhi
+2025-11-26,Ghee,Local_Market,None,0.0,0.0,Pass,Jaipur
+2025-11-25,Tea,Premium_Brand_C,Artificial Color,0.5,0.0,Fail,Kolkata
+2025-11-24,Milk,Supermarket_Brand,Urea,0.1,0.0,Fail,Pune
+2025-11-23,Honey,Supermarket_Brand,None,0.0,5.0,Pass,Bangalore
+2025-11-22,Eggs,Premium_Brand_A,None,0.0,0.0,Pass,Mumbai
+2025-11-21,Spices (Turmeric),Local_Market,None,0.0,0.0,Pass,Ahmedabad
+2025-11-20,Eggs,Local_Farm,Nitrofurans (AOZ),0.00005,0.0,Fail,Pune
+2025-11-19,Milk,Local_Dairy,Maltodextrin,0.3,0.0,Fail,Hyderabad
+2025-11-18,Honey,Supermarket_Brand,Sugar Syrup,18.0,5.0,Fail,Bangalore
+2025-11-17,Ghee,Local_Market,Vegetable Oil,10.0,0.0,Fail,Jaipur
+2025-11-16,Tea,Local_Market,None,0.0,0.0,Pass,Kolkata
+2025-11-15,Eggs,Standard_Brand_B,Antibiotics,0.0003,0.0,Fail,Chennai
+2025-11-14,Spices (Chilli),Export_Brand_X,None,0.0,0.1,Pass,Delhi
+2025-11-13,Milk,Supermarket_Brand,None,0.0,0.0,Pass,Lucknow
+2025-11-12,Honey,Local_Market,None,0.0,5.0,Pass,Patna
+2025-11-11,Eggs,Premium_Brand_A,None,0.0,0.0,Pass,Mumbai
+2025-11-10,Spices (Turmeric),Export_Brand_Y,None,0.0,0.0,Pass,Ahmedabad
+2025-11-09,Milk,Local_Dairy,Water,0.6,0.0,Fail,Hyderabad
+2025-11-08,Honey,Supermarket_Brand,Sugar Syrup,22.0,5.0,Fail,Bangalore
+2025-11-07,Ghee,Local_Market,None,0.0,0.0,Pass,Jaipur
+2025-11-06,Tea,Premium_Brand_C,Iron Filings,0.8,0.0,Fail,Kolkata
+2025-11-05,Eggs,Local_Farm,None,0.0,0.0,Pass,Pune
+2025-11-04,Spices (Chilli),Local_Market,None,0.0,0.1,Pass,Delhi
+2025-11-03,Milk,Supermarket_Brand,Urea,0.05,0.0,Fail,Lucknow
+2025-11-02,Honey,Local_Market,Sugar Syrup,28.0,5.0,Fail,Patna
+2025-11-01,Eggs,Standard_Brand_B,None,0.0,0.0,Pass,Chennai
+2025-10-31,Spices (Turmeric),Export_Brand_Y,Lead Chromate,0.0015,0.0,Fail,Ahmedabad
+2025-10-30,Milk,Local_Dairy,None,0.0,0.0,Pass,Hyderabad
+2025-10-29,Honey,Supermarket_Brand,None,0.0,5.0,Pass,Bangalore
+2025-10-28,Eggs,Premium_Brand_A,None,0.0,0.0,Pass,Mumbai
+2025-10-27,Ghee,Local_Market,Vegetable Oil,8.0,0.0,Fail,Jaipur
+2025-10-26,Tea,Premium_Brand_C,None,0.0,0.0,Pass,Kolkata
+2025-10-25,Milk,Supermarket_Brand,Water,0.5,0.0,Fail,Pune
+2025-10-24,Honey,Local_Market,Sugar Syrup,35.0,5.0,Fail,Patna
+2025-10-23,Eggs,Local_Farm,None,0.0,0.0,Pass,Pune
+2025-10-22,Spices (Chilli),Export_Brand_X,Ethylene Oxide,0.15,0.1,Fail,Delhi
+2025-10-21,Milk,Local_Dairy,Maltodextrin,0.4,0.0,Fail,Hyderabad
+2025-10-20,Honey,Supermarket_Brand,None,0.0,5.0,Pass,Bangalore
+2025-10-19,Eggs,Standard_Brand_B,None,0.0,0.0,Pass,Chennai
+2025-10-18,Ghee,Local_Market,None,0.0,0.0,Pass,Jaipur
+2025-10-17,Tea,Local_Market,Artificial Color,0.3,0.0,Fail,Kolkata
+2025-10-16,Milk,Supermarket_Brand,Urea,0.08,0.0,Fail,Lucknow
+2025-10-15,Honey,Local_Market,None,0.0,5.0,Pass,Patna
+2025-10-14,Eggs,Premium_Brand_A,Nitrofurans (AOZ),0.0006,0.0,Fail,Mumbai
+2025-10-13,Spices (Turmeric),Local_Market,None,0.0,0.0,Pass,Ahmedabad
+2025-10-12,Milk,Local_Dairy,Water,0.7,0.0,Fail,Hyderabad
+2025-10-11,Honey,Supermarket_Brand,Sugar Syrup,19.0,5.0,Fail,Bangalore
+2025-10-10,Ghee,Local_Market,Vegetable Oil,12.0,0.0,Fail,Jaipur
+2025-10-09,Tea,Premium_Brand_C,Iron Filings,1.0,0.0,Fail,Kolkata
+2025-10-08,Eggs,Local_Farm,None,0.0,0.0,Pass,Pune
+2025-10-07,Spices (Chilli),Export_Brand_X,None,0.0,0.1,Pass,Delhi
+2025-10-06,Milk,Supermarket_Brand,None,0.0,0.0,Pass,Lucknow
+2025-10-05,Honey,Local_Market,None,0.0,5.0,Pass,Patna
+2025-10-04,Eggs,Standard_Brand_B,Antibiotics,0.0005,0.0,Fail,Chennai
+2025-10-03,Spices (Turmeric),Export_Brand_Y,Lead Chromate,0.0025,0.0,Fail,Ahmedabad
+2025-10-02,Milk,Local_Dairy,Maltodextrin,0.55,0.0,Fail,Hyderabad
+2025-10-01,Honey,Supermarket_Brand,Sugar Syrup,20.0,5.0,Fail,Bangalore
+2025-09-30,Eggs,Premium_Brand_A,None,0.0,0.0,Pass,Mumbai
+2025-09-29,Ghee,Local_Market,None,0.0,0.0,Pass,Jaipur
+2025-09-28,Tea,Premium_Brand_C,Artificial Color,0.4,0.0,Fail,Kolkata
+2025-09-27,Milk,Supermarket_Brand,Water,0.4,0.0,Fail,Pune
+2025-09-26,Honey,Local_Market,Sugar Syrup,32.0,5.0,Fail,Patna
+2025-09-25,Eggs,Local_Farm,Nitrofurans (AOZ),0.00008,0.0,Fail,Pune
+2025-09-24,Spices (Chilli),Export_Brand_X,None,0.0,0.1,Pass,Delhi
+2025-09-23,Milk,Local_Dairy,None,0.0,0.0,Pass,Hyderabad
+2025-09-22,Honey,Supermarket_Brand,None,0.0,5.0,Pass,Bangalore
+2025-09-21,Eggs,Standard_Brand_B,None,0.0,0.0,Pass,Chennai
+2025-09-20,Ghee,Local_Market,Vegetable Oil,11.0,0.0,Fail,Jaipur
+2025-09-19,Tea,Local_Market,None,0.0,0.0,Pass,Kolkata
+2025-09-18,Milk,Supermarket_Brand,Urea,0.06,0.0,Fail,Lucknow
+2025-09-17,Honey,Local_Market,None,0.0,5.0,Pass,Patna
+2025-09-16,Eggs,Premium_Brand_A,None,0.0,0.0,Pass,Mumbai
+2025-09-15,Spices (Turmeric),Export_Brand_Y,None,0.0,0.0,Pass,Ahmedabad
+2025-09-14,Milk,Local_Dairy,Water,0.65,0.0,Fail,Hyderabad
+2025-09-13,Honey,Supermarket_Brand,Sugar Syrup,17.0,5.0,Fail,Bangalore
+2025-09-12,Ghee,Local_Market,None,0.0,0.0,Pass,Jaipur
+2025-09-11,Tea,Premium_Brand_C,Iron Filings,0.9,0.0,Fail,Kolkata
+2025-09-10,Eggs,Local_Farm,None,0.0,0.0,Pass,Pune
+2025-09-09,Spices (Chilli),Local_Market,None,0.0,0.1,Pass,Delhi
+2025-09-08,Milk,Supermarket_Brand,None,0.0,0.0,Pass,Lucknow
+2025-09-07,Honey,Local_Market,Sugar Syrup,30.0,5.0,Fail,Patna
+2025-09-06,Eggs,Standard_Brand_B,Antibiotics,0.0004,0.0,Fail,Chennai
+2025-09-05,Spices (Turmeric),Export_Brand_Y,Lead Chromate,0.001,0.0,Fail,Ahmedabad
+2025-09-04,Milk,Local_Dairy,Maltodextrin,0.45,0.0,Fail,Hyderabad
+2025-09-03,Honey,Supermarket_Brand,None,0.0,5.0,Pass,Bangalore
+2025-09-02,Eggs,Premium_Brand_A,None,0.0,0.0,Pass,Mumbai
+2025-09-01,Ghee,Local_Market,Vegetable Oil,9.0,0.0,Fail,Jaipur
+2025-08-31,Tea,Premium_Brand_C,None,0.0,0.0,Pass,Kolkata
+2025-08-30,Milk,Supermarket_Brand,Water,0.3,0.0,Fail,Pune
+2025-08-29,Honey,Local_Market,Sugar Syrup,34.0,5.0,Fail,Patna
+2025-08-28,Eggs,Local_Farm,None,0.0,0.0,Pass,Pune
+2025-08-27,Spices (Chilli),Export_Brand_X,Ethylene Oxide,0.13,0.1,Fail,Delhi
+2025-08-26,Milk,Local_Dairy,Maltodextrin,0.35,0.0,Fail,Hyderabad
+2025-08-25,Honey,Supermarket_Brand,None,0.0,5.0,Pass,Bangalore
+2025-08-24,Eggs,Standard_Brand_B,None,0.0,0.0,Pass,Chennai
+2025-08-23,Ghee,Local_Market,None,0.0,0.0,Pass,Jaipur
+2025-08-22,Tea,Local_Market,Artificial Color,0.2,0.0,Fail,Kolkata
+2025-08-21,Milk,Supermarket_Brand,Urea,0.07,0.0,Fail,Lucknow
+2025-08-20,Honey,Local_Market,None,0.0,5.0,Pass,Patna
+2025-08-19,Eggs,Premium_Brand_A,None,0.0,0.0,Pass,Mumbai
+2025-08-18,Spices (Turmeric),Local_Market,None,0.0,0.0,Pass,Ahmedabad
