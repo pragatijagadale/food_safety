@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "food_safety_pbi_project"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "930f405c-23a9-4e38-b556-b58846e94693"
+  }
+}

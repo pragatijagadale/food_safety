@@ -1,0 +1,27 @@
+table key_measures
+	lineageTag: 53148890-3ed5-43fa-a6c6-03582d3657d0
+
+	measure 'Total Samples Tested' = COUNT(food_safety_data[Safety_Status])
+		formatString: 0
+		lineageTag: 5f8e9228-1de0-4dc7-8b69-61aaa5b9dfbb
+
+	measure 'Failure Rate %' = DIVIDE(CALCULATE(COUNT(food_safety_data[Safety_Status]),food_safety_data[Safety_Status] = "Fail") , COUNT(food_safety_data[Safety_Status]))
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 2945937c-d6eb-4d66-bf31-4974e8bcf7ac
+
+	measure 'Total Fails' = CALCULATE(COUNT(food_safety_data[Safety_Status]),food_safety_data[Safety_Status] = "Fail")
+		formatString: 0
+		lineageTag: 710232d9-d06c-4840-bfd3-23b4df8ea3cd
+
+	partition key_measures = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

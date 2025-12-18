@@ -1,0 +1,5 @@
+relationship ca2c23e8-e6fe-4067-9e99-bd819c786cc9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: food_safety_data.Date
+	toColumn: LocalDateTable_922c867f-9f89-4a39-8813-7fd5e8c9abc8.Date
+

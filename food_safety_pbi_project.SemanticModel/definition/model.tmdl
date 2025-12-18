@@ -1,0 +1,21 @@
+model Model
+	culture: en-IN
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["food_safety_data","key_measures"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table food_safety_data
+ref table DateTableTemplate_a3fa1bd3-95b3-4d34-9675-01e75c4c0c17
+ref table LocalDateTable_922c867f-9f89-4a39-8813-7fd5e8c9abc8
+ref table key_measures
+
+ref cultureInfo en-IN
+

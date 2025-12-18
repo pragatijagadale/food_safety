@@ -1,0 +1,131 @@
+table food_safety_data
+	lineageTag: fdf5798b-e36b-4010-961d-a890836186fc
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7ba8f5ba-b2fe-471a-98a9-f3061f8500ab
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: ca2c23e8-e6fe-4067-9e99-bd819c786cc9
+			defaultHierarchy: LocalDateTable_922c867f-9f89-4a39-8813-7fd5e8c9abc8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Product_Category
+		dataType: string
+		lineageTag: 6756eeb8-f910-4dc5-9c6f-ddaf657f3740
+		summarizeBy: none
+		sourceColumn: Product_Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Brand_Type
+		dataType: string
+		lineageTag: d30c76ee-8662-48cc-9335-5d7dc2be0f70
+		summarizeBy: none
+		sourceColumn: Brand_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Adulterant_Detected
+		dataType: string
+		lineageTag: 6e04a5ed-eb50-4ddb-b6cf-f7159cdddc43
+		summarizeBy: none
+		sourceColumn: Adulterant_Detected
+
+		annotation SummarizationSetBy = Automatic
+
+	column Detected_Value_ppm
+		dataType: double
+		lineageTag: 619a8e2d-3787-4e73-b875-8613088ef697
+		summarizeBy: sum
+		sourceColumn: Detected_Value_ppm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Safe_Limit_ppm
+		dataType: double
+		lineageTag: 4d692861-da25-4c38-a4be-3dd85f600168
+		summarizeBy: sum
+		sourceColumn: Safe_Limit_ppm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Test_Result
+		dataType: string
+		lineageTag: f470d3b4-d9d7-4084-a216-3e1d23fd5831
+		summarizeBy: none
+		sourceColumn: Test_Result
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location
+		dataType: string
+		lineageTag: 0f52bae2-39fd-4cb0-a82e-7e7090077715
+		summarizeBy: none
+		sourceColumn: Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column Excess_Toxicity
+		dataType: double
+		lineageTag: 88e8fa36-2855-4a3c-b528-b5296f9b3c89
+		summarizeBy: sum
+		sourceColumn: Excess_Toxicity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Safety_Status
+		dataType: string
+		lineageTag: e24ffc6a-5986-49ab-8dca-295f53bbac2e
+		summarizeBy: none
+		sourceColumn: Safety_Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month_Short = FORMAT(food_safety_data[Date], "MMM")
+		lineageTag: 48286bec-67a0-491f-a236-696337b1863a
+		summarizeBy: none
+		sortByColumn: Month_Number
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month_Number = MONTH(food_safety_data[Date])
+		formatString: 0
+		lineageTag: 6ba1e481-9b2d-4f60-a44b-e2bab411ca10
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition food_safety_data = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\praga\Desktop\small pbi projects\food_safety\food_safety_data_100.csv"),[Delimiter=",", Columns=8, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Date", type date}, {"Product_Category", type text}, {"Brand_Type", type text}, {"Adulterant_Detected", type text}, {"Detected_Value_ppm", type number}, {"Safe_Limit_ppm", type number}, {"Test_Result", type text}, {"Location", type text}}),
+				    #"Added Custom" = Table.AddColumn(#"Changed Type", "Excess_Toxicity", each [Detected_Value_ppm]-[Safe_Limit_ppm]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom",{{"Excess_Toxicity", type number}}),
+				    #"Added Conditional Column" = Table.AddColumn(#"Changed Type1", "Safety_Status", each if [Excess_Toxicity] > 0 then "Fail" else "Pass"),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Added Conditional Column",{{"Safety_Status", type text}})
+				in
+				    #"Changed Type2"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

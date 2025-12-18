@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "food_safety_pbi_project"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "bd7678a7-3ec8-4977-b1b5-1b0359391b4b"
+  }
+}
